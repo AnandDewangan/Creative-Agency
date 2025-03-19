@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Horizontal Scroll Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <a href="/" class="nav-link"
+          >Creative<span class="text-warning">Agency</span></a
+        >
+      </div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contact</a>
+        <a href="tel:+123456789" class="call-button">Call Us</a>
+      </div>
+      <div class="hamburger" onclick="toggleMenu()">
+        <i class="bi bi-list"></i>
+      </div>
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#about" onclick="toggleMenu()">About</a>
+        <a href="#services" onclick="toggleMenu()">Services</a>
+        <a href="#menu" onclick="toggleMenu()">Menu</a>
+        <a href="#contact" onclick="toggleMenu()">Contact</a>
+        <a href="tel:+123456789" class="call-button">Call Us</a>
+      </div>
+    </div>
+    <div class="wrapper" id="wrapper">
+      <div id="hero" class="hero-section">
+        <div class="container-xxl p-0">
+          <div class="container-xxl position-relative p-0">
+            <div class="container-xxl py-5 hero-header mb-5">
+              <div class="container my-5 py-5">
+                <div class="row align-items-center g-5">
+                  <div class="col-lg-6 text-center text-lg-start">
+                    <h1 class="display-3 text-white">Enjoy Our</h1>
+                    <h1
+                      class="display-3 text-white animated slideInLeft"
+                      id="typing-text"
+                    >
+                      Delicious Meal
+                    </h1>
+                    <p class="text-white animated slideInLeft mb-4 pb-2">
+                      Cooking is an art, and the ingredients are the colors that
+                      paint a masterpiece. Quality ingredients are the
+                      brushstrokes that create a lasting impression on the
+                      palate.
+                    </p>
+                    <a
+                      href="tel:+918963906336"
+                      class="btn btn-outline-warning text-success w-50"
+                    >
+                      📞 Call Now </a
+                    ><br /><br />
+                    <h3 class="text-light">
+                      ***Tiffin Service Available in Gandhi Chowk, Dayalband,
+                      Ashok Nagar Sarkanda Bilaspur
+                    </h3>
+                  </div>
+                  <div class="col-lg-6 text-center text-lg-end overflow-hidden">
+                    <img
+                      src="https://anand-catering-service.vercel.app/static/media/hero1.e32851b35d64ad8d078d.png"
+                      class="img-fluid"
+                      alt="Hero Image"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="about" class="section">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+              <div class="row g-3">
+                <div class="col-6 text-start">
+                  <img
+                    class="img-fluid rounded-3"
+                    src="https://anand-catering-service.vercel.app/static/media/about-1.31d35982b99e5cfa9bfa.jpg"
+                    alt="About Image 1"
+                  />
+                </div>
+                <div class="col-6 text-start">
+                  <img
+                    class="img-fluid rounded-3"
+                    src="https://anand-catering-service.vercel.app/static/media/about-2.5fbe70b2d9e638363000.jpg"
+                    alt="About Image 2"
+                  />
+                </div>
+                <div class="col-6 text-end">
+                  <img
+                    class="img-fluid rounded-3"
+                    src="https://anand-catering-service.vercel.app/static/media/about-3.8fc04937ff6a2444cd66.jpg"
+                    alt="About Image 3"
+                  />
+                </div>
+                <div class="col-6 text-end">
+                  <img
+                    class="img-fluid rounded-3"
+                    src="https://anand-catering-service.vercel.app/static/media/about-4.60453ab823bd9d56a49c.jpg"
+                    alt="About Image 4"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 text-light">
+              <h5
+                class="section-title ff-secondary text-start text-warning fw-normal"
+              >
+                About Us
+              </h5>
+              <h1 class="mb-4 text-light">
+                Welcome to
+                <i class="fa fa-utensils text-primary me-2"></i> Anand Caterers
+              </h1>
+              <h4 class="mb-4 text-warning">
+                <b id="typing-text"
+                  >Anand Caterer: Crafting Culinary Magic Since 2003</b
+                >
+              </h4>
+              <p class="mb-4 fs-6">
+                With a legacy spanning back to 2003, Anand Caterer has been a
+                trusted name in the realm of culinary expertise. We take pride
+                in orchestrating unforgettable weddings for over 1000 couples,
+                setting the stage for joyous unions.
+              </p>
+              <div class="row g-4 mb-4 mt-5">
+                <div class="col-sm-6">
+                  <div
+                    class="d-flex align-items-center border-start border-5 border-primary px-3"
+                  >
+                    <h1
+                      class="flex-shrink-0 display-5 text-primary mb-0"
+                      data-toggle="counter-up"
+                    >
+                      20
+                    </h1>
+                    <div class="ps-4">
+                      <p class="mb-0">Years of</p>
+                      <h6 class="text-uppercase mb-0 text-warning">
+                        Experience
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div
+                    class="d-flex align-items-center border-start border-5 border-primary px-3"
+                  >
+                    <h1
+                      class="flex-shrink-0 display-5 text-primary mb-0"
+                      data-toggle="counter-up"
+                    >
+                      35
+                    </h1>
+                    <div class="ps-4">
+                      <p class="mb-0">Popular</p>
+                      <h6 class="text-uppercase mb-0 text-warning">
+                        Master Chefs
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="services" class="section">
+        <div class="container">
+          <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h5
+              class="section-title ff-secondary text-center text-warning fw-normal"
+            >
+              Our Services
+            </h5>
+            <h1 class="mb-5 text-light">Explore Our Services</h1>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+              <div class="service-item rounded pt-3 bg-light">
+                <div class="p-4">
+                  <i
+                    class="bi bi-person-badge text-primary mb-4"
+                    style="font-size: 3rem"
+                  ></i>
+                  <h5>Master Chefs</h5>
+                  <p class="fs-5">
+                    Master chefs create extraordinary dishes with precision.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+              <div class="service-item rounded pt-3 bg-danger">
+                <div class="p-4">
+                  <i
+                    class="bi bi-egg-fried text-warning mb-4"
+                    style="font-size: 3rem"
+                  ></i>
+                  <h5>Quality Food</h5>
+                  <p class="fs-5">
+                    Enjoy high-quality ingredients prepared with utmost care.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+              <div class="service-item rounded pt-3 bg-dark">
+                <div class="p-4">
+                  <i
+                    class="bi bi-fire text-success mb-4"
+                    style="font-size: 3rem"
+                  ></i>
+                  <h5 class="text-light">Fresh Ingredients</h5>
+                  <p class="text-light fs-5">
+                    Our ingredients are fresh and sourced from trusted vendors.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+              <div class="service-item rounded pt-3 bg-warning">
+                <div class="p-4">
+                  <i
+                    class="bi bi-flower2 text-danger mb-4"
+                    style="font-size: 3rem"
+                  ></i>
+                  <h5>Healthy Options</h5>
+                  <p class="fs-5">
+                    We offer a variety of healthy and delicious meal options.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="menu" class="section">
+        <div class="container">
+          <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h5
+              class="section-title ff-secondary text-center text-warning fw-normal"
+            >
+              Food Menu
+            </h5>
+            <h1 class="mb-2 text-light">Most Popular Items</h1>
+          </div>
+          <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
+            <ul class="nav nav-pills d-inline-flex justify-content-center mb-5">
+              <li class="nav-item">
+                <a
+                  class="d-flex align-items-center text-start mx-3 pb-3"
+                  data-bs-toggle="pill"
+                  href="#tab-2"
+                >
+                  <i class="fa fa-hamburger fa-2x text-primary"></i>
+                  <div class="ps-3">
+                    <h6 class="fs-4">Launch</h6>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active"
+                  data-bs-toggle="pill"
+                  href="#tab-1"
+                >
+                  <i class="fa fa-coffee fa-2x text-primary"></i>
+                  <div class="ps-3">
+                    <h6 class="fs-4">Breakfast</h6>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="d-flex align-items-center text-start mx-3 me-0 pb-3"
+                  data-bs-toggle="pill"
+                  href="#tab-3"
+                >
+                  <i class="fa fa-utensils fa-2x text-primary"></i>
+                  <div class="ps-3">
+                    <h6 class="fs-4">Dinner</h6>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <div id="tab-1" class="tab-pane fade show p-0 active">
+                <div class="row g-4">
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="images/breakfast/aaloo-gunda.jpg"
+                        alt=""
+                        width="80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span class="text-warning">Aloo Pakoda</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Savor the golden crunch of our Aloo Pakoda, where
+                          every bite is a burst of flavorful delight, capturing
+                          the essence of indulgence in simplicity.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="images/breakfast/chila.jpg"
+                        alt=""
+                        width="80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span class="text-warning">Chilla</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Delight in the fusion of flavors with our Chawal Atta
+                          Chila, a savory pancake that brings a perfect blend of
+                          taste and nutrition to your plate.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="images/breakfast/idli.jpg"
+                        alt=""
+                        width="80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span class="text-warning">Idli & Sambhar</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Savor the South Indian harmony on your plate with our
+                          soft Idli and flavorful Sambhar, a symphony of taste
+                          that transcends culinary boundaries.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="images/breakfast/pakoda.jpg"
+                        alt=""
+                        width="80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span class="text-warning">Pakoda</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Dive into the crispy indulgence of our Pakoda, a
+                          flavorful sensation that captures the essence of spice
+                          and warmth, creating a perfect snack-time
+                          symphony.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="images/breakfast/samosa.jpg"
+                        alt=""
+                        width="80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span class="text-warning">Samosa</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Triangular delights await - our Samosas boast a
+                          golden, flaky crust embracing a spiced medley,
+                          creating an irresistible fusion of crispiness and
+                          flavor.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="images/breakfast/sev-poha.jpg"
+                        alt=""
+                        width="80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span class="text-warning">Poha Sev</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Start your day with the warmth of our Poha, a
+                          fragrant blend of flattened rice, aromatic spices, and
+                          vibrant garnishes, ensuring a flavorful breakfast
+                          experience.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="tab-2" class="tab-pane fade show p-0">
+                <div class="row g-4">
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="images/lunch/rice.png"
+                        alt=""
+                        width="80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span class="text-warning">Rice</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >In the humblest bowl of rice lies the strength of a
+                          thousand harvests, a testament to patience and
+                          perseverance.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="images/lunch/dal.png"
+                        alt=""
+                        width="80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span class="text-warning">Dal Fry</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >In every spoonful of dal fry, find the harmony of
+                          tradition and taste, a melody of flavors that nourish
+                          the soul.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="images/lunch/dry sabji.png"
+                        alt=""
+                        width="80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span class="text-warning">Dry Veg Sabji</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >In each bite of Dry Veg Sabji, discover the harmony
+                          of fresh produce and aromatic spices, a feast for the
+                          senses.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="images/lunch/Aloo-Matar.webp"
+                        alt=""
+                        width="80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span class="text-warning">Gravy Veg Sabji</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >In every spoonful of Gravy Veg Sabji, taste the
+                          perfect blend of spices and garden-fresh goodness, a
+                          true culinary treasure.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="images/lunch/roti.png"
+                        alt=""
+                        width="80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span class="text-warning">Roti</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Roti, a humble circle of warmth and tradition, wraps
+                          the essence of home in every bite.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="images/lunch/aachar.png"
+                        alt=""
+                        width="80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span class="text-warning">Aachar</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Aachar, a tangy burst of tradition, preserves the
+                          vibrant essence of every meal.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="tab-3" class="tab-pane fade show p-0">
+                <div class="row g-4">
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="images/lunch/rice.png"
+                        alt=""
+                        width="80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span class="text-warning">Rice</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >In the humblest bowl of rice lies the strength of a
+                          thousand harvests, a testament to patience and
+                          perseverance.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="images/lunch/dal.png"
+                        alt=""
+                        width="80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span class="text-warning">Dal Fry</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >In every spoonful of dal fry, find the harmony of
+                          tradition and taste, a melody of flavors that nourish
+                          the soul.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="images/lunch/chole.png"
+                        alt=""
+                        width="80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span class="text-warning">Dry Veg Sabji</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >In each bite of Dry Veg Sabji, discover the harmony
+                          of fresh produce and aromatic spices, a feast for the
+                          senses.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="images/lunch/paneer-sabji.webp"
+                        alt=""
+                        width="80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span class="text-warning">Gravy Veg Sabji</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >In every spoonful of Gravy Veg Sabji, taste the
+                          perfect blend of spices and garden-fresh goodness, a
+                          true culinary treasure.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="images/lunch/roti.png"
+                        alt=""
+                        width="80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span class="text-warning">Roti</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Roti, a humble circle of warmth and tradition, wraps
+                          the essence of home in every bite.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="d-flex align-items-center">
+                      <img
+                        class="flex-shrink-0 img-fluid rounded"
+                        src="images/lunch/aachar.png"
+                        alt=""
+                        width="80px"
+                      />
+                      <div class="w-100 d-flex flex-column text-start ps-4">
+                        <h5
+                          class="d-flex justify-content-between border-bottom pb-2"
+                        >
+                          <span class="text-warning">Aachar</span>
+                        </h5>
+                        <small class="fst-italic"
+                          >Aachar, a tangy burst of tradition, preserves the
+                          vibrant essence of every meal.</small
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="contact" class="section">
+        <div class="container">
+          <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h5
+              class="section-title ff-secondary text-center text-warning fw-normal"
+            >
+              Contact Us
+            </h5>
+            <h1 class="text-light">Contact For Any Query</h1> 
+          <!-- Social Media Icons -->
+          <div class="col-12 text-center my-5">
+            <a href="tel: +918963906336" class="text-success me-3" target="_blank">
+                <i class="bi bi-whatsapp fs-2"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/anand-dewangan" class="text-primary me-3" target="_blank">
+                <i class="bi bi-linkedin fs-2"></i>
+            </a>
+            <a href="https://github.com/AnandDewangan" class="text-dark me-3" target="_blank">
+                <i class="bi bi-github fs-2"></i>
+            </a>
+            <a href="mailto: mr.anand.dewangan@gmail.com" class="text-danger" target="_blank">
+                <i class="bi bi-envelope-fill fs-2"></i>
+            </a>
+        </div>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-6 wow fadeIn" data-wow-delay="0.1s">
+              <iframe
+                class="position-relative rounded w-100 h-100"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3696.9257009322396!2d82.1681160756425!3d22.09065427983785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a280b77153ee2bf%3A0xce5afe2a97af3202!2sAnand%20Tiffin%20Center%20%26%20Catering%20Services!5e0!3m2!1sen!2sin!4v1721477591256!5m2!1sen!2sin"
+                frameborder="0"
+                style="min-height: 350px; border: 0"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
+            </div>
+            <div class="col-md-6">
+              <div class="wow fadeInUp" data-wow-delay="0.2s">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input type="text" class="form-control" />
+                      <label for="name" class="fs-4">Your Name</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-floating">
+                      <input type="text" class="form-control" />
+                      <label for="email" class="fs-4">Your Mobile No</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <input type="text" class="form-control" />
+                      <label for="subject" class="fs-4">Subject</label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-floating">
+                      <textarea
+                        class="form-control"
+                        placeholder="Leave a message here"
+                        id="message"
+                        style="height: 150px"
+                      ></textarea>
+                      <label for="message" class="fs-4 text-secondary"
+                        >Leave a message here</label
+                      >
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button class="btn btn-primary w-100 py-3" type="submit">
+                      Send Message
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      All rights reserved. Developed by &nbsp;<a
+        href="https://www.linkedin.com/in/anand-dewangan"
+        target="_blank"
+        class="nav-link text-warning"
+        >Anand Dewangan</a
+      >
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
